@@ -174,3 +174,14 @@ function renderJobs(tab) {
         container.appendChild(card);
     });
 }
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        document.querySelector(".active").classList.remove("active");
+        tab.classList.add("active");
+        renderJobs(tab.dataset.tab);
+    });
+});
+
+renderJobs("all");
+updateDashboard();
