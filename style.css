@@ -14,3 +14,62 @@ body {
     max-width: 1000px;
     margin: auto;
 }
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s;
+}
+
+/* Not Applied */
+.notapplied-btn {
+    color: #6b7280;
+    border: 1px solid #dadada;
+    background-color: #d3d3d3;
+}
+
+/* Interview */
+.interview-btn {
+    color: #22c55e;
+    border: 1px solid #22c55e;
+}
+
+.interview-btn:hover {
+    background: #22c55e;
+    color: white;
+}
+
+.interviewUp-btn {
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    background-color: #bcf5d1;
+}
+
+
+
+/* Rejected */
+.rejected-btn {
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+.rejected-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.rejectedUp-btn {
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    background-color: #fee2e2;
+}
