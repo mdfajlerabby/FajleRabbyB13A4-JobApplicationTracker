@@ -247,3 +247,23 @@ body {
     border: 1px solid #ef4444;
     background-color: #fee2e2;
 }
+
+/* Empty State */
+
+.empty {
+    text-align: center;
+    margin-top: 40px;
+    color: #6b7280;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+}
