@@ -1,83 +1,47 @@
-## Welcome To ( সহজ সরল সিম্পল ) Assignment - 4 
-
-
----
-# 📅 Deadline For 60 marks: 23th February, 2026 (11:59 pm ⏱️)
-# 📅 Deadline For 50 marks: 24th February, 2026 (11:59 pm ⏱️)
-# 📅 Deadline For 30 marks: Any time after 24th February.
-
-
-# Main Requirements
-
-## Design Part
-
-## Dashboard
-- Website name and Create a dashboard like figma 
-- The section should be responsive for mobile devices. It is totally up to you. 
-
-## Available Jobs Section
-- A title on the left side, jobs count on the right side 
-- 3 different tab  below the section title 
-- Minimum 8 cards with:
-	- companyName
-	- position
-	- location
-	- type
-	- salary
-	- description
-	- 2 buttons: Interview, Rejected
-- By default all the jobs data will show on All tab, and the Interview, Rejected tab will show “No jobs Available” message with a subtitle below and an icon/image on the above
-
-- The section should be responsive for mobile devices. It is totally up to you.
-
---- 
-
-## Functionalities Part
-- Clicking on Interview button on the card 
-    - will add the data on Interview tab 
-    - add the status as Interview.
-    - Will increase the the count of interview in Dashboard 
-
-- Clicking on Rejected button on the card 
-    - will add the data on Rejected tab 
-    - add the status as Rejected.
-    - Will increase the the count of Rejected in Dashboard
-
-- Enable toggle between Interview and rejected button(you can select Rejected button after clicking on Interview, and Interview button after clicking on Rejected button). It will change the tab and dashboard count also. It will show tab wise jobs count on the right.
-
----
-
-# Challenges Requirements
-- Clicking on the delete button will remove that card from the UI, and the count will be deducted from the dashboard card and the main section.
-- No lorem ipsum text on your website. At least 8 meaningful commits in your project.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-
-
 ## Answers to Questions
 
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
+JavaScript provides several methods to select elements from the DOM, and each method has its own purpose and behavior.
+
+The getElementById() method is used to select a single element based on its unique id. Since an id is always unique in an HTML document, this method returns only one element. It is fast and commonly used when we know the exact id of an element.
+
+The getElementsByClassName() method is used to select all elements that share the same class name. It returns a live HTMLCollection, which means the collection automatically updates if elements are added or removed from the DOM.
+
+The querySelector() method selects the first element that matches a specified CSS selector. It is very flexible because it allows selecting elements using id, class, tag name, or more complex CSS selectors.
+
+The querySelectorAll() method selects all elements that match a specified CSS selector. It returns a static NodeList, which means it does not automatically update when the DOM changes.
+
+In summary, getElementById() selects one element by id, getElementsByClassName() selects multiple elements by class name, querySelector() selects the first matching element using a CSS selector, and querySelectorAll() selects all matching elements using a CSS selector.
+
 ### 2. How do you create and insert a new element into the DOM?
+
+To create and insert a new element into the DOM, JavaScript provides methods such as createElement() and appendChild().
+
+First, a new element is created using the createElement() method. After creating the element, we can add content, attributes, or styles to it. Finally, the element is inserted into the DOM using appendChild() or append().
+
+This process allows developers to dynamically add new content to a webpage without refreshing the page. It is an important feature for creating interactive and dynamic web applications.
 
 ### 3. What is Event Bubbling? And how does it work?
 
+Event bubbling is a mechanism in JavaScript where an event starts from the target element and then propagates upward through its parent elements.
+
+For example, if a button is inside a div and the div is inside the body, clicking the button will first trigger the event on the button, then on the div, and finally on the body.
+
+This happens because the event moves from the child element to its parent elements. Event bubbling is useful because it allows parent elements to respond to events triggered by their child elements.
+
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
+
+Event delegation is a technique where a single event listener is added to a parent element instead of adding separate event listeners to multiple child elements.
+
+When an event occurs on a child element, it bubbles up to the parent element, and the parent handles the event.
+
+Event delegation is useful because it improves performance, reduces memory usage, and makes the code easier to manage. It is especially helpful when elements are created dynamically, as the parent element can handle events for both existing and newly added elements.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
----
+The preventDefault() method is used to prevent the default behavior of an element. For example, it can stop a form from submitting or prevent a link from opening.
 
+The stopPropagation() method is used to stop the event from propagating to parent elements. This means the event will only be handled by the current element and not by its parent elements.
 
-**Technology Stack:**
-- HTML
-- CSS (Vanilla/Tailwind/DaisyUI)
-- JavaScript (Vanilla)
-
-
---- 
-
-## What to submit: 
-
-1. GitHub Repository Link: 
-2. Live Site Link: 
+In simple terms, preventDefault() stops the default browser action, while stopPropagation() stops the event from bubbling up through the DOM.
